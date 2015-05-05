@@ -20,9 +20,7 @@ import org.mcstats.Metrics;
  * @author syokkendesuyo
  */
 
-
 public class SimpleMyPoint extends JavaPlugin implements Listener {
-
 
 	/**
 	 * プラグインが有効になったときに呼び出されるメソッド
@@ -63,9 +61,6 @@ public class SimpleMyPoint extends JavaPlugin implements Listener {
 			Double z =player.getLocation().getZ();
 			float yaw = player.getLocation().getYaw();       //向いている方角と視線の高さをconfigに書き込みます
 			float pitch = player.getLocation().getPitch();   //このデータはsethomeやwherehomeのコマンドで表示しない
-
-
-
 
 			if (cmd.getName().equalsIgnoreCase("setpoint")) {
 				if(args.length == 0){
