@@ -1,0 +1,38 @@
+name: SimpleMyPoint
+version: 0.0.2
+main: net.jp.minecraft.plugin.SimpleMyPoint
+commands:
+    setpoint:
+        description: Set My Point.
+        usage: /setpoint
+        permission: smp.setpoint
+        permission-message: You don't have permission (smp.setpoint)
+    warp:
+        description: Warp My Point.
+        usage: /warp <PointName>
+        permission: smp.warp
+        permission-message: You don't have permission (smp.warp)
+    detailpoint:
+        description: Warp My Point.
+        usage: /detailpoint <PointName>
+        permission: smp.detailpoint
+        permission-message: You don't have permission (smp.detailpoint)
+    deletepoint:
+        description: Delete My Point.
+        usage: /deletepoint <PointName>
+        permission: smp.deletepoint
+        permission-message: You don't have permission (smp.deletepoint)
+permissions:
+    smp.setpoint:
+        description: Set My Point.
+        default: op
+    smp.warp:
+        description: Warp My Point.
+        default: op
+    smp.detailpoint:
+        description: Warp My Point.
+        default: op
+    smp.deletepoint:
+        description: Delete My Point.
+        default: op
+
